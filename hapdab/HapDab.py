@@ -1,4 +1,4 @@
-#!/bin/env/python3
+#!/usr/bin/env python3.6
 
 import os
 import io
@@ -76,8 +76,7 @@ class HapDab(Freezable):
         # Get the path of BEAGLE
         beagle_path = pkg_resources.resource_filename(
             'hapdab',
-            #'include/beagle/beagle.08Jun17.d8b.jar'
-            'include/beagle/beagle.03Jul18.40b.jar'
+            'include/beagle/beagle.28Sep18.793.jar'
         )
         ref_vcf = os.path.join(self._basedir,'reference.vcf.gz')
         # Create a command
@@ -176,11 +175,10 @@ class HapDab(Freezable):
         # Get the path of BEAGLE
         beagle_path = pkg_resources.resource_filename(
             'hapdab',
-            #'include/beagle/beagle.08Jun17.d8b.jar'
-            'include/beagle/beagle.03Jul18.40b.jar'
+            'include/beagle/beagle.28Sep18.793.jar'
         )
         # Create a command
-        cmd = f"java -jar {beagle_path} gt={vcf_file} out={phased_vcf.name}".split()
+        cmd = (f"java -jar {beagle_path} gt={vcf_file} out={phased_vcf.name}").split()
         phaser = subprocess.run(cmd)
         if phaser.returncode != 0:
             raise ValueError("Phasing failed!")
