@@ -7,10 +7,11 @@
 * some spellings
 * unusual `#!/bin/env/python3` out for `#!/usr/bin/env python3.6`
 * f-strings in parens ... python3 style
+* Dockerfile, to come ...
 * docs
 
 # Installation
 Requirements
 * python3.6 (liberal use of f-strings in code)
 * cassandra (needs to be running, check via `systemctl status cassandra`) after installation details of which [here.](http://cassandra.apache.org/).
-* `pip3 install hapdab` to install via which is recommendede method
+* `pip3 install hapdab` to install via which is recommended method
