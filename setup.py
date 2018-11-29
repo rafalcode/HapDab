@@ -28,7 +28,7 @@ setup(
     name = 'hapdab',
     version = find_version('hapdab','__init__.py'),
 
-    description = 'An library for managing and analyzing genotypes and haplotypes',
+    description = 'A library for managing and analyzing genotypes and haplotypes',
     url = 'http://linkage.io',
     author = 'Rob Schaefer',
     license = "Copyright Linkage Analytics 2016-2018. Available under the MIT License",
@@ -72,7 +72,7 @@ setup(
 
     package_data = {
         '':['*.cyx'],    
-        'beagle':'include/beagle/beagle.08Jun17.d8b.jar'
+        'beagle':'include/beagle/beagle.28Sep18.793.jar'
     },
     python_requires='>=3.6',
     setup_requires=[
